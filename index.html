@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/theater.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="/css/swiper-bundle.min.css"> -->
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo">Popcorn<span>Flix</span></a>
+
+        <div class="search-box">
+          <input type="search" name="" id="search-input" placeholder="Search movie">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <a href="" class="user">
+            <img src="./images/userimg.jpeg" class="user-img" alt="">
+        </a>
+        <div class="navbar">
+            <a href="#Home" class="nav-link nav-active">
+                <i class="fa-solid fa-house"></i>
+                <span class="nav-link-title">Home</span>
+            </a>
+            <a href="#popular" class="nav-link">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <span class="nav-link-title">Trending</span>
+            </a>
+            <a href="#movies" class="nav-link">
+                <i class="fa-solid fa-compass"></i>
+                <span class="nav-link-title">Explore</span>
+            </a>
+            <a href="play-page.html" class="nav-link">
+                <i class="fa-solid fa-tv"></i>
+                <span class="nav-link-title">Movies</span>
+            </a>
+            <a href="#Home" class="nav-link">
+                <i class="fa-solid fa-heart"></i>
+                <span class="nav-link-title">Favourites</span>
+            </a>
+        </div>
+        </div>
+    </header>
+    <section class="home container" id="home">
+        <img src="https://www.wallsnapy.com/img_gallery/leo-vijay-first-look-image-wallpaper-1200-4894031.jpg" alt="" class="home-img">
+        <div class="home-text">
+            <h1 class="home-title">
+               Leo Vijay's<br>Latest Movie
+            </h1>
+            <p>Releasing Oct 19th 2023</p>
+            <a href="" class="watch-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+                <span>Watch the Trailer</span>
+            </a>
+
+            <i class="fa-solid fa-play play-movie"></i>
+            
+            <div class="video-container">
+                <div class="video-box">
+                    <video id="myvideo" src="./videos/LEO - Official Trailer _ Thalapathy Vijay _ Lokesh Kanagaraj _ Anirudh Ravichander.mp4" controls></video>
+    
+                    <i class="fa-solid fa-xmark close-video"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="popular container" id="popular">
+        <div class="heading">
+            <h2 class="heading-title">Popular Movies</h2>
+
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> 
+            </div>
+
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/d217332e-063c-4070-82bf-888e480784a7.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Aanandam</h2>
+                            <span class="movie-type">Romance</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNmU2Nzc2ZmItMTc5ZS00ZTE5LWEyOTMtMzIwYjBkNTI3Mjg4XkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_FMjpg_UX1000_.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Kushi</h2>
+                            <span class="movie-type">Romance</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/Movie _ Jailer.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Jailer</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/196560/Remo4.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Remo</h2>
+                            <span class="movie-type">Romance and Comedy</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/Ulaganayakan Kamal Haasan's _VIKRAM_  🎉.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Vikram</h2>
+                            <span class="movie-type">Action and Thriller</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="https://www.kerala9.com/wp-content/uploads/2022/01/hridayam-movie-poster-1024x1024.jpg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Hridayam</h2>
+                            <span class="movie-type">Romance</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/e11bb752-7f38-48cd-ba75-a05a95b14010.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Dada</h2>
+                            <span class="movie-type">Love</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/Good Night (2023).jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Good night</h2>
+                            <span class="movie-type">Comedy</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/Ponniyin Selvan_ Part Two movie free to watch.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Ponniyin Selvan-1</h2>
+                            <span class="movie-type">Historic movie</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/After so long I watched one of the best movies in India Sita Ramam__I couldn't control my tears.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Sita Raman</h2>
+                            <span class="movie-type">Love</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/26dbaa60-f90d-4641-a339-b620a0ad085b.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">96</h2>
+                            <span class="movie-type">Love</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/d825f15b-b5be-459d-a10d-4d985c716e82.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Beast</h2>
+                            <span class="movie-type">Action</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/Engeyum Kadhal.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Engeyum Kadhal</h2>
+                            <span class="movie-type">Love</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/Thuppakki (2012) Tamil Movies Free Download_Tamil….jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Thupakki</h2>
+                            <span class="movie-type">Action and Love</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/Paiyaa.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Paiyaa</h2>
+                            <span class="movie-type">Love and Action</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/Ante Sundaraniki.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Ante Sundaraniki</h2>
+                            <span class="movie-type">Love</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/977f277c-6a28-4732-88aa-eb9e13132f90.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Premam</h2>
+                            <span class="movie-type">Love</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                        <img src="./images/ca96df31-6a13-4585-9557-c710bfd79237.jpeg" alt="" class="movie-box-img">
+                        <div class="box-text">
+                            <h2 class="movie-title">Doctor</h2>
+                            <span class="movie-type">Love and Action</span>
+                            <a href="" class="watch-btn play-btn">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+   </section>
+
+
+   <section class="movies container" id="movies">
+
+    <div class="heading">
+        <h2 class="heading-title">Movies and Shows</h2>
+    </div>
+
+    <div class="movies-content">
+
+
+        <div class="movie-box">
+            <img src="./images/nitham oru vaanam 2022 sinhala subtitle.jpeg" alt="" class="movie-box-img">
+            <div class="box-text">
+                <h2 class="movie-title">Nitham oru Vaanam</h2>
+                <span class="movie-type">Love and Romance</span>
+                <a href="play-page.html" class="watch-btn play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <img src="./images/859599c9-925b-4aee-9fc8-54f635ebdce9.jpeg" alt="" class="movie-box-img">
+            <div class="box-text">
+                <h2 class="movie-title">Oh my Kadavule</h2>
+                <span class="movie-type">Love</span>
+                <a href="" class="watch-btn play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <img src="./images/Tamil actress Trisha Krishnan movie photo_.jpeg" alt="" class="movie-box-img">
+            <div class="box-text">
+                <h2 class="movie-title">The Road</h2>
+                <span class="movie-type">Action,Crime-Thriller</span>
+                <a href="" class="watch-btn play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <img src="./images/Maara (2021).jpeg" alt="" class="movie-box-img">
+            <div class="box-text">
+                <h2 class="movie-title">Maara</h2>
+                <span class="movie-type">Adventure Romantic Drama</span>
+                <a href="" class="watch-btn play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <img src="./images/Vaaranam Aayiram Tribute Poster.jpeg" alt="" class="movie-box-img">
+            <div class="box-text">
+                <h2 class="movie-title">Vaaranam Aayiram</h2>
+                <span class="movie-type">Drama,Romance</span>
+                <a href="" class="watch-btn play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <img src="./images/Ratsasan (Main Hoon Dandh Adhikari) (2018) UNCUT 1080p, 720p, 480p HDRip South Movie   x264 A___.jpeg" alt="" class="movie-box-img">
+            <div class="box-text">
+                <h2 class="movie-title">Ratsasan</h2>
+                <span class="movie-type">Crime-Thriller</span>
+                <a href="" class="watch-btn play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <img src="./images/c0443c32-21f7-4618-840c-37dd0f91137e.jpeg" alt="" class="movie-box-img">
+            <div class="box-text">
+                <h2 class="movie-title">Imaika Nodigal</h2>
+                <span class="movie-type">Crime-Thriller,Action,Love</span>
+                <a href="" class="watch-btn play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="movie-box">
+            <img src="./images/a756cfd9-8e46-44aa-a1ec-8fc423918564.jpeg" alt="" class="movie-box-img">
+            <div class="box-text">
+                <h2 class="movie-title">Master</h2>
+                <span class="movie-type">Action</span>
+                <a href="" class="watch-btn play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+   </section>
+
+   <div class="next-page">
+        <a href="#" class="next-btn">Next Page</a>
+   </div>
+
+   <div class="copyright">
+    <p>&#169; PopcornFlix All Right Reserved. 2023 </p>
+    <p>Designed by Oviya💛</p>
+   </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+         var swiper = new Swiper(".mySwiper", {
+            slidesPerView:1,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 5500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints:{
+        280:{
+            slidesPerView:1,
+            spaceBetween: 10,
+        },
+        320:{
+            slidesPerView:2,
+            spaceBetween: 10,
+        },
+        510:{
+            slidesPerView:2,
+            spaceBetween: 10,
+        },
+        758:{
+            slidesPerView:3,
+            spaceBetween: 15,
+        },
+        900:{
+            slidesPerView:4,
+            spaceBetween: 20,
+        },
+    }
+  });    
+
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
